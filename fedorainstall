@@ -13,3 +13,4 @@ pipx install pywal
 pipx ensurepath
 sudo dnf remove micro
 sudo micro /sys/module/usbhid/parameters/mousepoll
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
