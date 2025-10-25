@@ -1,6 +1,9 @@
 sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-sudo dnf install libxcrypt-compat curl imagemagick micro qbittorrent gnome-tweaks gnome-shell-extension-manager eza zoxide micro git rocm-opencl
+sudo dnf install libxcrypt-compat curl imagemagick micro qbittorrent gnome-tweaks gnome-shell-extension-manager eza zoxide micro git rocm-opencl pipx
 micro -plugin install quoter
 micro -plugin install autoclose
 micro -plugin install detectindent
+pipx install pywal
+pipx ensurepath
 sudo dnf remove micro
+sudo micro /sys/module/usbhid/parameters/mousepoll
