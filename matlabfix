@@ -1,0 +1,2 @@
+cd /usr/local/MATLAB/R2024a/sys/os/glnxa64
+sudo mv libstdc++.so.6 libstdc++.so.6.backup
